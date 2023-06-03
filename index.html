@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0"/>
+    <title>温州中学新疆部拾光电视台</title>
+</head>
+<body>
+    <h1>温州中学新疆部拾光电视台</h1>
+<div id="playercontainer"></div>
+<script type="text/javascript" src="player/cyberplayer.js"></script>
+<script type="text/javascript">
+    var player = cyberplayer("playercontainer").setup({
+        width: 680,
+        height: 448,
+        file: "rtmp://10.101.132.133/live/xjbtv", // <—rtmp直播地址
+        autostart: true,
+        stretching: "uniform",
+        volume: 100,
+        controls: true,
+        rtmp: {
+            reconnecttime: 5, // rtmp直播的重连次数
+            bufferlength: 1 // 缓冲多少秒之后开始播放 默认1秒
+        }//,
+        //ak: "xxxxxxxxxxxxxxxx" // 公有云平台注册即可获得accessKey
+    });
+</script>
+</body>
+</html>
